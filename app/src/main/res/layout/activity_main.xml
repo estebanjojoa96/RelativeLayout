@@ -79,15 +79,16 @@
 <ScrollView
     android:id="@+id/section2"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:layout_weight="1"
     android:layout_margin="5dp">
 
 <RelativeLayout
 
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="30dp">
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp">
 
     <ImageView
         android:id="@+id/ImageView"
@@ -116,23 +117,31 @@
         android:layout_below="@id/TextUp"
         android:layout_marginTop="10sp"/>
 
-</RelativeLayout>
-
-
-    <RelativeLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/TextBotton"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp">
+        android:layout_toRightOf="@id/ImageView"
+        android:text="cr 21"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_below="@id/TextDown"
+        android:layout_marginTop="10sp"
+        />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@mipmap/ic_launcher_round"/>
+    <TextView
+        android:id="@+id/TextBottonRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="41 minutes ago"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_below="@id/TextDown"
+        android:layout_marginTop="10sp"
+        />
 
-
-
-    </RelativeLayout>
-
+</RelativeLayout>
 
 
 </ScrollView>
